@@ -1,0 +1,79 @@
+/* 清除所有元素的默认外边距和内边距，避免影某些元素对布局产生影响 */
+
+* {
+
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 固定父盒子*/
+#header {
+    background-color: blue;
+
+}
+
+#nav {
+    background-image: url(../imgs/windowsXp4k.jpg);
+}
+
+#main {
+    background-color: antiquewhite;
+    width: 1600px;
+
+    overflow: hidden;
+    margin: auto;
+}
+
+/* 控制子盒子 */
+#header .db {
+    width: 1600px;
+    margin: auto;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+#header .db .asdf01 ul li {
+    float: left;
+    height: 80px;
+    margin-right: 100px;
+    line-height: 80px;
+}
+
+#header .db .serach {
+    float: left;
+    width: 400px;
+    line-height: 40px;
+    margin-right: 100px;
+}
+
+#header .db .serach .asdf02 {
+    width: 335px;
+    height: 80px;
+
+    float: left;
+    color: rgb(214, 214, 214);
+    background-color: white;
+    border: 0px;
+    padding-left: 15px;
+
+}
+
+#header .db .asdf {
+    width: 200px;
+    height: 80px;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+    background-image: url(../imgs/windowsXp4k.jpg);
+    float: left;
+    margin-right: 120px;
+}
